@@ -2,3 +2,8 @@
 name = "tensor"
 version = "0.1.0"
 authors = ["Britt Cagnina <brittcagnina@gmail.com>"]
+
+description = "Currently, a sketch of a Tensor library"
+readme = "README.md"
+keywords = [ "tensor", "vector", "matrix", "linear" ]
+license = "Unlicense"
