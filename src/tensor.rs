@@ -26,7 +26,7 @@ pub struct Tensor {
 impl Tensor {
     pub fn build(d: i32, r: i32, v: Vec<i64>) -> Tensor {
         Tensor {
-            //dim of basic vector
+            //dim of single basis vector
             dim: d,
             rank: r,
             components: v,
