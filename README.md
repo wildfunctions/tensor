@@ -42,9 +42,9 @@ The above code will perform the inner product between t3 and itself, and then pr
 
 A more robust Tensor library is on the way.
 
-## Intention
+## Purpose
 
-This library is meant to abstract Tensor math for high rank Tensors calculations.  Though Matrices and Vectors are special cases of Tensors, we do not aim to provide the highest performance for these low ranks.  We recommend 'nalgebra', https://crates.io/crates/nalgebra, for high performance Vector and Matrix opperations.
+This library is meant to abstract Tensor math and allow high rank Tensor calculations (Rank > 2).  Several individuals use the term 'Tensor' despite using only Vectors and Matrices.  We do not encourage this technicality.  Though Matrices and Vectors are special cases of Tensors, we do not aim to provide the highest performance for such low ranks.  We recommend 'nalgebra', https://crates.io/crates/nalgebra, for high performance Vector and Matrix operations.
 
 ## To Do
 
