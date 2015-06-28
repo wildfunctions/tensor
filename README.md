@@ -11,7 +11,7 @@ The same is true for other components such as ( ∂x<sup>'</sup><sub>β</sub> / 
 
 This allows a straight-forward calculation of the outer and inner products of Tensors.
 
-The inner product between two Tensors is currently defined for all Tensor ranks, so long as the ranks are the same, and the indices of both Tensors are all of equal dimension.
+The inner product between two Tensors is currently defined for all Tensor ranks, so long as the ranks are the same, and the indices of both Tensors are all of equal dimension.  I will gradually ease up on these restrictions.
 
 This code serves as a sketch.<br/>
 
