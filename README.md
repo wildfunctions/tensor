@@ -3,7 +3,7 @@
 Currently, support is only for contravariant Tensors of equal dimension basis vectors.<br/>
 Also, all Tensors are assumed to use an orthonormal basis (Ex: Euclidean standard basis).
 
-We use the following rank Tensor definition:<br/>
+We use the following Tensor definition:<br/>
 >T<sup>'α..'β</sup> = ( ∂x<sup>'</sup><sub>α</sub> / ∂x<sub>γ</sub> )..(  ∂x<sup>'</sup><sub>β</sub> / ∂x<sub>μ</sub> ) T<sup>γ..μ</sup>
 
 After assuming an orthonormal basis, we know that ( ∂x<sup>'</sup><sub>α</sub> / ∂x<sub>γ</sub> ) will be zero for all cases α != γ.<br/> and one for α = γ
@@ -11,8 +11,9 @@ The same is true for other components such as ( ∂x<sup>'</sup><sub>β</sub> / 
 
 This allows a straight-forward calculation of the outer and inner products of Tensors.
 
-The inner product between two Tensors is currently defined for all Tensor ranks, so long as the ranks are the same, and the indices of both Tensors are all of equal dimension.  I will gradually ease up on these restrictions.
+The inner product between two Tensors is currently defined for all Tensor ranks, provided the ranks are equal, and the indices of both Tensors are all of equal dimension.  We will gradually ease up on these restrictions.
 
+## Example
 This code serves as a sketch.<br/>
 
 
@@ -40,3 +41,16 @@ The above code will perform the inner product between t3 and itself, and then pr
 
 
 A more robust Tensor library is on the way.
+
+## Intention
+
+This library is meant to abstract Tensor math for high rank Tensors calculations.  Though Matrices and Vectors are special cases of Tensors, we do not aim to provide the highest performance for these low ranks.  We recommend 'nalgebra', https://crates.io/crates/nalgebra, for high performance Vector and Matrix opperations.
+
+## To Do
+
+A list of additions and improvements:
+
+* [ ] Tensor Outer Product
+* [ ] Scalar Multiplication and Addition
+* [ ] Tensor Addition and Subtration
+* [ ] Tensor Conversion to nalgebra types
