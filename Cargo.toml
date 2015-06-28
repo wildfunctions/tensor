@@ -1,13 +1,13 @@
 [package]
 name = "tensor"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Britt Cagnina <brittcagnina@gmail.com>"]
 
 description = "Currently, a sketch of a Tensor library"
 readme = "README.md"
 keywords = [ "tensor", "vector", "matrix", "linear", "n-way" ]
-license = "None"
-repository = "https://github.com/gustavla/numeric"
+license = "Unlicense"
+repository = "https://github.com/brittcagnina/tensor"
 
 [dependencies]
 num = "0.1.25"
