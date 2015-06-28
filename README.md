@@ -33,7 +33,7 @@ let t3 = Tensor::build(3, 3, vec![
     25, 26, 27
 ]);
 
-let t = t3.inner_product(&t3.clone());
+let t = t3.inner_product(&t3);
 t.print();
 ```
 
