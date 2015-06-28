@@ -1,3 +1,4 @@
+pub mod traits;
 pub mod tensor;
 pub use tensor::{Rank1Tensor, Rank2Tensor, Tensor};
 
@@ -20,7 +21,7 @@ fn main() {
         7, 8, 9
     ]);
     
-    //4-d Rank1 Tensor
+    //4d Rank1 Tensor
     let t1 = Tensor::build(4, 1, vec![
         2, 3, 5, 5
     ]); 
@@ -41,14 +42,14 @@ fn main() {
     ]);
        
 
-    //2-d Rank2 Tensor
+    //2d Rank2 Tensor
     let t4 = Tensor::build(2, 2, vec![
         1, 2, 
         3, 4
     ]);
 
-    //2-d Rank3 Tensor
-    let t5 = Tensor::build(2, 3, vec![
+    //2d Rank3 Tensor
+    let mut t5 = Tensor::build(2, 3, vec![
         1, 2,
         3, 4,
  
@@ -70,4 +71,20 @@ fn main() {
 
     println!( "Printing t5" );
     t5.print();
+
+    println!( "Printing t5" );
+    t5.set(&[1,1,1], 0);
+    t5.print();
+
+    println!( "t2 inner product ");
+    t2.inner_product(&t2.clone());
+
+    println!( "t1 inner product ");
+    t1.inner_product(&t1.clone());
+    
+    println!( "t3 inner product ");
+    let t = t3.inner_product(&t3.clone());
+
+    println!( "t final after inner product ");
+    t.print();
 }
