@@ -4,7 +4,6 @@ pub use tensor::{Rank1Tensor, Rank2Tensor, Tensor};
 
 fn main() {
 
-    /*
     let x1 = vec![1,0];
     let x2 = vec![0,1];
 
@@ -12,11 +11,8 @@ fn main() {
     let v2 = Rank1Tensor::build(2, x2); 
 
     let t1 = v1 * v2;
+    t1.print();
 
-    let a1 = vec![1,0];
-    let a2 = vec![0,1];
-    */
- 
     //3d Rank2 Tensor
     let t2 = Tensor::build(3, 2, vec![
         1, 2, 3, 
