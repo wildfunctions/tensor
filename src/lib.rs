@@ -1,3 +1,4 @@
-pub mod traits;
 pub mod tensor;
-pub use tensor::{Tensor, Rank1Tensor, Rank2Tensor};
+pub mod traits;
+
+pub use tensor::{Rank1Tensor, Rank2Tensor, Tensor};

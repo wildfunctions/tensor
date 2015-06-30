@@ -3,18 +3,21 @@ pub mod tensor;
 pub use tensor::{Rank1Tensor, Rank2Tensor, Tensor};
 
 fn main() {
-    //let x1 = vec![1,0];
-    //let x2 = vec![0,1];
 
-    //let v1 = Rank1Tensor::build(2, x1);
-    //let v2 = Rank1Tensor::build(2, x2); 
+    /*
+    let x1 = vec![1,0];
+    let x2 = vec![0,1];
 
-    //let t1 = v1 * v2;
+    let v1 = Rank1Tensor::build(2, x1);
+    let v2 = Rank1Tensor::build(2, x2); 
 
-    //let a1 = vec![1,0];
-    //let a2 = vec![0,1];
-    
-    //3-d Rank2 Tensor
+    let t1 = v1 * v2;
+
+    let a1 = vec![1,0];
+    let a2 = vec![0,1];
+    */
+ 
+    //3d Rank2 Tensor
     let t2 = Tensor::build(3, 2, vec![
         1, 2, 3, 
         4, 5, 6, 
@@ -83,7 +86,7 @@ fn main() {
     t1.inner_product(&t1.clone());
     
     println!( "t3 inner product ");
-    let t = t3.inner_product(&t3.clone());
+    let t = t3.inner_product(&t3);
 
     println!( "t final after inner product ");
     t.print();
